@@ -13,6 +13,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway:300,500|Arvo:700" rel="tylesheet" type="text/css">
 		<link rel="icon" href="images/17.jpg">
 		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+
+		<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
 		<!--[if lte IE 8]><style>.support-note .note-ie{display:block;}</style><![endif]-->
 
     </head>
@@ -70,19 +73,16 @@
 										</div>
 										<br>
 										<br>
-                    					<iframe
-											width="100%"
-											height="450"
-											style="border:0"
-											loading="lazy"
-											allowfullscreen
-											src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBTNRZ7gmy2fCg0dMnTPNaiElFEfMdnh18
-											&q=Cumin+N+Eat,Allentown+PA">
-										</iframe>
-										
-										
-
-										
+										<div id='map' style='width: auto; height: 300px;'></div>
+										<script>
+										mapboxgl.accessToken = 'pk.eyJ1Ijoia3J1c2hpbCIsImEiOiJjazloZWFhNjcwcDNnM2VrZmdwZmtsamd4In0.TfhSinR048qo-VabiPgalA';
+										var map = new mapboxgl.Map({
+										container: 'map',
+										style: 'mapbox://styles/krushil/cklgyblr3023x17oa4raokrt3',
+										center: [-75.5253846, 40.5789555],
+										zoom: 16
+										});
+										</script>
 									</div>
 								</div><!-- /rm-content -->
 							</div><!-- /rm-front -->
@@ -114,7 +114,7 @@
 										<dd style="text-align: left; color: #8EEB47; font-weight: bold;">Spicy Masala Fries <span style="float: right; color: grey;">3</span></dd>
 										<dd style="text-align: left; color: #8EEB47; font-weight: bold;">Fried Peanuts <span style="float: right; color: grey;">1</span></dd>
 										<dd style="text-align: left; color: #8EEB47; font-weight: bold;">Raita <span style="float: right; color: grey;">1</span></dd>
-										<dd style="text-align: left; color: #8EEB47; font-weight: bold;">Extra Cumin Roti <span style="float: right; color: grey;">1</span></dd>
+										<dd style="text-align: left; color: #8EEB47; font-weight: bold;">Extra Cumoin Roti <span style="float: right; color: grey;">1</span></dd>
 										<br>
 										<dt style="text-align: left; color: #DC642B; font-weight: bold;">Drinks</dt>
 										<dd style="text-align: left; color: #8EEB47; font-weight: bold;">Golden Milk <span style="float: right; color: grey;">3</span></dd>
